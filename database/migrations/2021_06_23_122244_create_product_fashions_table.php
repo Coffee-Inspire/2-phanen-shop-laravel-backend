@@ -23,7 +23,7 @@ class CreateProductFashionsTable extends Migration
             $table->text('description');
             $table->string('category');
             $table->string('size');
-            $table->boolean('status');
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }

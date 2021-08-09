@@ -21,7 +21,7 @@ class CreateProductCosmeticsTable extends Migration
             $table->bigInteger('priceTwn');
             $table->text('description');
             $table->string('category');
-            $table->boolean('status');
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }
